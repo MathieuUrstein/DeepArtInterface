@@ -1,0 +1,22 @@
+{
+  "name": "deepart-interface",
+  "version": "1.0.0",
+  "description": "A prototype interface for the DeepArt experience",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathieuUrstein/DeepArtInterface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathieuUrstein/DeepArtInterface/issues"
+  },
+  "homepage": "https://github.com/MathieuUrstein/DeepArtInterface#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
