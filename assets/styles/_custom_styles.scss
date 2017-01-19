@@ -1,0 +1,49 @@
+html, body {
+   width: 100%;
+   height: 100%;
+}
+body {
+   background: url('../images/background.png') repeat;
+}
+.container-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+.inner-center {
+   position: relative;
+}
+.polaroid-styles {
+   position: absolute;
+   width: 400px;
+   height: auto;
+   opacity: .5;
+}
+#style-1 {
+   top: -100px;
+   left: 150px;
+   transform: rotate(-10deg);
+}
+#style-2 {
+   top: -100px;
+   right: 150px;
+   transform: rotate(10deg);
+}
+#style-3 {
+   bottom: -100px;
+   left: 150px;
+   transform: rotate(-15deg);
+}
+#style-4 {
+   bottom: -100px;
+   right: 150px;
+   transform: rotate(15deg);
+}
+.language-link {
+   img {
+      &:hover {
+         transform: scale(1.2);
+      }
+   }
+}

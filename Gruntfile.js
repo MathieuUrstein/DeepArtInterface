@@ -19,13 +19,15 @@ module.exports = function (grunt) {
          },
          index: {
             files: [
-               '/**/*',
-               '!**/node_modules/**'
+               '!**/node_modules/**',
+               '**/*.html',
+               '**/*.scss',
+               '**/*.js'
             ]
          },
          css: {
             files: [
-               'static/styles/*.scss'
+               'assets/styles/*.scss'
             ],
             tasks: ['sass']
          }
