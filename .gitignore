@@ -158,3 +158,8 @@ Temporary Items
 .sass-cache/
 *.css.map
 
+# No css only scss
+*.css
+
+# No map files
+*.map
