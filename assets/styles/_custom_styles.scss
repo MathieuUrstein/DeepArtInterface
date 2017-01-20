@@ -144,3 +144,18 @@ body {
       width: 100%;
    }
 }
+#step-processing {
+   .step-of-process {
+      display: none;
+   }
+   #loading-processing {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 900;
+   }
+}
+#step-result {
+   #result-link {
+      font-weight: 900;
+   }
+}
