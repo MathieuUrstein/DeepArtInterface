@@ -14,36 +14,133 @@ body {
 .inner-center {
    position: relative;
 }
-.polaroid-styles {
-   position: absolute;
-   width: 400px;
-   height: auto;
-   opacity: .5;
-}
-#style-1 {
-   top: -100px;
-   left: 150px;
-   transform: rotate(-10deg);
-}
-#style-2 {
-   top: -100px;
-   right: 150px;
-   transform: rotate(10deg);
-}
-#style-3 {
-   bottom: -100px;
-   left: 150px;
-   transform: rotate(-15deg);
-}
-#style-4 {
-   bottom: -100px;
-   right: 150px;
-   transform: rotate(15deg);
-}
-.language-link {
-   img {
-      &:hover {
-         transform: scale(1.2);
+#steps {
+   height: 20px;
+   max-height: 20px;
+   overflow: visible;
+
+   .logo {
+      top: -20px;
+   }
+   .step {
+      text-align: center;
+
+      span {
+         padding: 13px;
+         border-radius: 100%;
+         background-color: white;
+         top: 30px;
+         width: 50px;
+         height: 50px;
+         position: relative;
+         display: inline-block;
+         box-shadow: 0 2px 4px rgba(0,0,0,.3);
+         font-weight: 900;
+         color: black;
       }
+
+      &.active, &:hover {
+         transform: scale(1.2);
+         span {
+            box-shadow: 0 2px 8px rgba(0,0,0,.5);
+         }
+      }
+   }
+}
+#home-page {
+   .polaroid-styles {
+      position: absolute;
+      width: 400px;
+      height: auto;
+      opacity: .5;
+   }
+   #style-1 {
+      top: -100px;
+      left: 150px;
+      transform: rotate(-10deg);
+   }
+   #style-2 {
+      top: -100px;
+      right: 150px;
+      transform: rotate(10deg);
+   }
+   #style-3 {
+      bottom: -100px;
+      left: 150px;
+      transform: rotate(-15deg);
+   }
+   #style-4 {
+      bottom: -100px;
+      right: 150px;
+      transform: rotate(15deg);
+   }
+   .language-link {
+      img {
+         &:hover {
+            transform: scale(1.2);
+         }
+      }
+   }
+}
+#step-style-choices {
+   .polaroid-styles {
+      position: absolute;
+      width: 400px;
+      height: auto;
+   }
+   #style-1 {
+      top: -50px;
+      left: 180px;
+      transform: rotate(-10deg);
+      z-index: 300;
+   }
+   #style-2 {
+      top: -50px;
+      right: 180px;
+      transform: rotate(10deg);
+      z-index: 300;
+   }
+   #style-3 {
+      bottom: -50px;
+      left: 180px;
+      transform: rotate(-15deg);
+      z-index: 200;
+   }
+   #style-4 {
+      bottom: -50px;
+      right: 180px;
+      transform: rotate(15deg);
+      z-index: 200;
+   }
+   .style-link {
+      &:hover {
+         img {
+            transform: rotate(0) scale(1.2) !important;
+            z-index: 400 !important;
+         }
+      }
+   }
+}
+#step-capture {
+   .polaroid {
+      background-color: white;
+      box-shadow: 0 3px 15px rgba(0,0,0,.4);
+      padding: 20px 20px 8px;
+      border-radius: 5px;
+
+      a {
+         background-color: rgb(211, 211, 211);
+         border-color: transparent;
+         color: #000;
+         font-weight: 900;
+
+         &:hover {
+            transform: scale(2.0) rotate(15deg);
+            box-shadow: 0 2px 4px rgba(0,0,0,.3);
+         }
+      }
+   }
+   #webcam {
+      width: 100%;
    }
 }
