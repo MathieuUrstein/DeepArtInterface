@@ -14,6 +14,13 @@ body {
 .inner-center {
    position: relative;
 }
+#page-title {
+   position: relative;
+   top: 120px;
+   font-weight: 100;
+   color: #a9a9a9;
+   text-shadow: 0 2px 0 #fff;
+}
 #steps {
    height: 20px;
    max-height: 20px;
@@ -24,12 +31,13 @@ body {
    }
    .step {
       text-align: center;
+      text-decoration: none;
 
       span {
          padding: 13px;
          border-radius: 100%;
          background-color: white;
-         top: 30px;
+         top: -36px;
          width: 50px;
          height: 50px;
          position: relative;
@@ -39,8 +47,21 @@ body {
          color: black;
       }
 
+      p {
+         padding: 13px;
+         background-color: white;
+         height: 50px;
+         border-radius: 10px;
+         position: relative;
+         top: 30px;
+         box-shadow: 0 2px 8px rgba(0,0,0,.5);
+         font-weight: 900;
+         visibility: hidden;
+      }
+
       &.active, &:hover {
          transform: scale(1.2);
+
          span {
             box-shadow: 0 2px 8px rgba(0,0,0,.5);
          }
@@ -49,6 +70,11 @@ body {
          cursor: not-allowed;
 
          span {
+            background-color: rgb(216, 216, 216);
+            color: rgb(87, 87, 87);
+         }
+
+         p {
             background-color: rgb(216, 216, 216);
             color: rgb(87, 87, 87);
          }
