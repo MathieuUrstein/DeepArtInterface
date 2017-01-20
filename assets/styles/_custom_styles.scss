@@ -45,6 +45,21 @@ body {
             box-shadow: 0 2px 8px rgba(0,0,0,.5);
          }
       }
+      &.inactive {
+         cursor: not-allowed;
+
+         span {
+            background-color: rgb(216, 216, 216);
+            color: rgb(87, 87, 87);
+         }
+      }
+      &.inactive:hover {
+         transform: scale(1);
+
+         span {
+            box-shadow: 0 2px 4px rgba(0,0,0,.3);
+         }
+      }
    }
 }
 #home-page {
@@ -129,9 +144,8 @@ body {
       border-radius: 5px;
 
       a {
-         background-color: rgb(211, 211, 211);
          border-color: transparent;
-         color: #000;
+         color: #fff;
          font-weight: 900;
 
          &:hover {

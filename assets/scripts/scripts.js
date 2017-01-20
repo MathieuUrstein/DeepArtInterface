@@ -4,16 +4,14 @@ var steps = document.querySelectorAll(".step-of-process");
 
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
 
-if (navigator.getUserMedia) {
-   navigator.getUserMedia({video: true}, handleVideo, videoError);
-}
-
 function handleVideo(stream) {
    video.src = window.URL.createObjectURL(stream);
 }
-
 function videoError(e) {
    console.log(e);
+}
+if (navigator.getUserMedia) {
+   navigator.getUserMedia({video: true}, handleVideo, videoError);
 }
 
 (function waitNextStep(currentStep) {
