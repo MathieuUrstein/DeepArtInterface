@@ -159,7 +159,7 @@ Temporary Items
 *.css.map
 
 # No css only scss
-*.css
+# *.css
 
 # No map files
 *.map
